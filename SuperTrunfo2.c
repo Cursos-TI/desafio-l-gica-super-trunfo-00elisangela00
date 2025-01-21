@@ -16,6 +16,8 @@ int main() {
     float Pib2;
     int Pontos_turisticos2;
  
+    char cidadeVencedora = populacao1+area1+pib1+pontos_turisticos1 > Populacao2+Area2+Pib2+Pontos_turisticos2;
+
     printf("Escolha uma Cidade, esta será a Cidade 1:\n");
     scanf("%s",cidade1);
     printf("Qual a População?\n");
@@ -69,20 +71,23 @@ int main() {
     }
 
     if (pib1 > Pib2){
-        printf ("O PIB da cidade1 é maior que o da Cidade2\n");
+        printf("A Cidade 1 tem o maior PIB.\n");
     } else {
-        printf("O PIB da Cidade2 é maior que o da cidade1\n");
+        printf("A Cidade 2 tem o maior PIB.\n");
     }
 
     if (pontos_turisticos1 > Pontos_turisticos2){
         printf("A Cidade 1 tem mais Pontos Turísticos.\n");
     } else {
-        pprintf("A Cidade 2 tem mais Pontos Turísticos.\n");
+        printf("A Cidade 2 tem mais Pontos Turísticos.\n");
     }
     
-
-
-
+printf("A cidade vencedora é: %s\n", cidadeVencedora)
+    if (cidade1 > Cidade2){
+        printf("A vencedora é a Cidade 1!\n");
+    } else {
+        printf("A vencedora é a Cidade 2!\n");
+    }
 
 
 
